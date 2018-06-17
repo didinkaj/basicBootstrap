@@ -6,94 +6,143 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- To ensure proper rendering and touch zooming for all devices-->
-
-   <!-- Bootstrap CSS -->
+ 
+  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+   <!-- custom css -->
+  <link rel="stylesheet" href="custom.css" />
 
-<!-- some components require bootstrap i.e Alerts Carousel Modals Navbar Tooltips  jquery comes first the bootstrap js -->
-  <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-  <!-- custom css -->
-  <style type="text/css">
-  		body {
-			  padding-top: 54px;
-			}
-
-			@media (min-width: 992px) {
-			  body {
-			    padding-top: 56px;
-			  }
-			}
-  </style>
-</head>
+  </head>
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Cytonn Technology</a>
+        <a class="navbar-brand" href="#">Cytonn Technology  Blog</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item "><i class="fa fa-users"></i>
               <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blogs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Reports</a>
-            </li>
+           
+            
+            <li class="nav-item active dropdown" >
+              <a class="nav-link dropdown-toggle"  id="blog" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">Blogs</a>
+            
+             <div class=" dropdown-menu" aria-labelledby="blog">
+                <a href="#" class=" dropdown-item" type="button" >Tech Blog</a>
+                <a href="#" class=" dropdown-item" type="button">Daily reports</a>
+              </div>
+              <li class="nav-item active">
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">Login</a>
+              </li>
+             
+              </li>
+            </div>
           </ul>
         </div>
       </div>
     </nav>
+    <!-- end of navigation bar -->
 
     <!-- Page Content -->
     <div class="container">
     	 <!-- Jumbotron Header -->
       <header class="jumbotron my-4">
-        <h1 class="display-3">A Warm Welcome!</h1>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
-        <a href="#" class="btn btn-primary btn-lg">Call to action!</a>
+        <h1 class="display-3"> Cyton Daily Report</h1>
+        <p class="lead">Contains all blogs written on daily basis by cytonn software developer interns; the blogs are mainly two...</p>
+        <a href="#" class="btn btn-primary btn-lg">Read More</a>
       </header>
-
+     <!--  end of jumbotron -->
 
       <div class="row">
         <!-- Blog Entries Column -->
         <div class="col-md-8">
 
-         
-
-          <!-- Blog Post -->
+          <!-- Blog Post 1-->
           <div class="card mb-4">
-          	<h2 class="card-title">Daily Blog Title</h2>
-            <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
-            <div class="card-body">
-              
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-              <a href="#" class="btn btn-primary">Read More &rarr;</a>
+                           <!-- start of slider -->
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block  w-100" src="https://placekitten.com/320/220?image=2" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="https://placekitten.com/320/220?image=2" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="https://placekitten.com/320/220?image=2" alt="Third slide">
+                    </div>
+                  </div>
+                </div>   
+                  <!-- end of slider -->
+                <div class="card-body">
+                    <h2 class="card-title">Daily Blog Title</h2>
+                    <p class="card-text">Foundation is one of the advanced front-end frameworks for designing beautiful responsive websites built by ZURB in 2008, contrarily, Twitter Bootstrap is the most popular framework designed by Mark  Toto and Jacob Thornton.</p>
+                    <a href="#" class="btn btn-primary">Read More &rarr;</a>
+                  </div>
+                  <div class="card-footer text-muted">
+                    Posted on June 12, 2018 by
+                    <a href="#">Johnson Didinya</a>
+                  </div>
             </div>
-            <div class="card-footer text-muted">
-              Posted on June 12, 2018 by
-              <a href="#">Johnson Didinya</a>
-            </div>
-          </div>
+          <!-- end of blog post -->
+
+          <!-- Blog Post 2-->
+          <div class="card mb-4">
+                <!--start of slider -->
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="https://placekitten.com/320/220?image=2" alt="img slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="https://placekitten.com/320/220?image=2" alt="img 2 slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="https://placekitten.com/320/220?image=2" alt="img 3 slide">
+                    </div>
+                  </div>
+                </div>   
+              <!-- end of slider -->
+              <div class="card-body">
+                  <h2 class="card-title">Daily Report Title</h2>
+                  <p class="card-text">Foundation is one of the advanced front-end frameworks for designing beautiful responsive websites built by ZURB in 2008, contrarily, Twitter Bootstrap is the most popular framework designed by Mark  Toto and Jacob Thornton.</p>
+                  <a href="#" class="btn btn-primary">Read More &rarr;</a>
+                </div>
+                <div class="card-footer text-muted">
+                  Posted on June 12, 2018 by
+                  <a href="#">Johnson Didinya</a>
+                </div>
+              </div>
+            <!-- end of blog post -->
 
           <!-- Pagination -->
           <ul class="pagination justify-content-center mb-4">
             <li class="page-item">
-              <a class="page-link" href="#">&larr; Older</a>
+              <a class="page-link" href="#">&larr; Previous</a>
             </li>
-            <li class="page-item disabled">
-              <a class="page-link" href="#">Newer &rarr;</a>
+            <li class="page-item disabled"> 
+              <a class="page-link">1</a>
+            </li>
+            <li class="page-item"> 
+              <a class="page-link">2</a>
+            </li>
+            <li class="page-item"> 
+              <a class="page-link">3</a>
+            </li>
+            <li class="page-item"> 
+              <a class="page-link">4</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" href="#">Next &rarr;</a>
             </li>
           </ul>
+          <!-- end of Pagination -->
 
         </div>
 
@@ -103,20 +152,45 @@
         <div class="col-md-4">
 
           <!-- Search Widget -->
-          <div class="card my-4">
-            <h5 class="card-header">Search</h5>
+          <div class="card my-4 ">
+            <h5 class="card-header ">Search</h5>
             <div class="card-body">
               <div class="input-group">
                 <input type="text" class="form-control" placeholder="Search for...">
                 <span class="input-group-btn">
-                  <button class="btn btn-secondary" type="button">Go!</button>
+                  <button class="btn btn-primary" type="button">Go!</button>
                 </span>
               </div>
             </div>
           </div>
+         <!--  end of search -->
 
-          <!-- Categories Widget -->
-          <div class="card my-4">
+        
+
+          <!-- nost viewed -->
+          <div class="card my-4 ">
+            <h5 class="card-header">Most Viewed</h5>
+            <div class="card-body text-secondary">
+              <ol class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <a href="#" class="card-link">Html and Bootstrap</a> <span class="badge badge-success badge-pill">5</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                <a href="#" class="card-link">Css and Sass</a>  <span class="badge badge-warning badge-pill">3</span>  
+              </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                <a href="#" class="card-link">Linux Administration</a> <span class="badge badge-danger badge-pill">0</span>
+              </li>
+               <li class="list-group-item d-flex justify-content-between align-items-center">
+                <a href="#" class="card-link">Control version management </a> <span class="badge badge-danger badge-pill">0</span>
+              </li>
+              </ol>
+              </div>
+          </div>
+         <!--  most viewed -->
+
+            <!-- Categories Widget -->
+          <div class="card my-4 ">
             <h5 class="card-header">Categories</h5>
             <div class="card-body">
               <div class="row">
@@ -136,30 +210,64 @@
               </div>
             </div>
           </div>
-
-          <!-- Side Widget -->
-          <div class="card my-4">
-            <h5 class="card-header">Most Viewed</h5>
-            <div class="card-body">
-              You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
-            </div>
-          </div>
+          <!-- end of category -->
 
         </div>
 
+
       </div>
-      <!-- /.row -->
+      <!-- row -->
 
     </div>
-    <!-- /.container -->
+    <!-- container -->
+
+    <!-- login modal -->
+      <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginModalLabel">Login </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <!-- Login form -->
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="InputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="Rememberme">Remember me</label>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Login</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of login modal -->
 
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; CTDB 2018</p>
+        <p class="m-0 text-center text-white">Copyright &copy; Johnson Didinya 2018</p>
       </div>
-      <!-- /.container -->
+      <!-- container -->
     </footer>
+    <!-- some components require bootstrap i.e Alerts Carousel Modals Navbar Tooltips  jquery comes first the bootstrap js -->
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/js/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </body>
 </html>

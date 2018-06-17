@@ -1,0 +1,20 @@
+body {
+  padding-top: 54px;
+  font-size: 1rem; }
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px; } }
+.py-5 {
+  background: #006b5b;
+  background: linear-gradient(90deg, #006b5b, #a2d157);
+  color: #fff; }
+
+.navbar {
+  background: #000000; }
+
+.card-heander {
+  background: #d4edda;
+  color: #155724; }
+
+/*# sourceMappingURL=custom.css.map */
